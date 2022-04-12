@@ -13,6 +13,16 @@ module.exports = {
         type: Sequelize.STRING,
         trim: true
       },
+      categoryId: {
+        type: Sequelize.UUID,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Categories',
+          key: 'id',
+          as: 'categoryId'
+        }
+      },
       quantity: {
         type: Sequelize.INTEGER,
         trim: true,
