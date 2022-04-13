@@ -1,5 +1,5 @@
 {
-  "name": "jest-tutorial",
+  "name": "sequelize-tutorial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "jest",
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+    "db:reset": "yarn sequelize-cli db:drop && yarn sequelize-cli db:create && yarn sequelize-cli db:migrate && yarn sequelize-cli db:seed:all"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Luigi Morel <morelmiles@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
